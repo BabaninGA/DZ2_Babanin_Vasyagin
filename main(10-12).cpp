@@ -121,10 +121,10 @@ int main() {
 	cout << "\nRow with MIN sum of elements: " << min_row2 << "\n";
 	cout << "\nRow with MAX sum of elements: " << max_row2 << "\n";
 
-	for (int i = 0; i < size_column; i++) {
-		delete[] * (column + i);
+	for (int i = 0; i < size_column2; i++) {
+		delete[] * (column2 + i);
 	}
-	delete[] column;
+	delete[] column2;
 
 	return 0;
 }
