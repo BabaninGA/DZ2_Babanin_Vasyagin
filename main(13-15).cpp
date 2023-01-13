@@ -12,7 +12,8 @@ int main() {
 	for (int i = 0; i < m + n; i++)
 		cout << *(nums1 + i) << " ";
 	cout << "\n";
-	delete[] nums1, nums2;
+	delete[] nums1;
+	delete[] nums2;
 
 	// Task 14
 	cout << "\nTask 14\n";
@@ -32,8 +33,9 @@ int main() {
 			cout << matrix_P_T[i][j] << " ";
 		cout << "\n";
 	}
+	for (int i = 0; i < n; i++)
+		delete[] matrix_P_T[i];
+	delete[] matrix_P_T;
 
 	return 0;
 }
-
-
