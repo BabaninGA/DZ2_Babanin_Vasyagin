@@ -28,6 +28,7 @@ int main() {
 		std::cout << a[i] << " ";
 	}
 	std::cout << std::endl;
+	delete[] a;
 
 
 	// Task 3
@@ -51,6 +52,7 @@ int main() {
 	}
 	std::cout << std::endl;
 	std::cout <<"Amount of permutations = " << counter << std::endl;
+	delete[] arr;
 
 
 	// Task 5
@@ -64,6 +66,8 @@ int main() {
 		std::cout << arr1r[i] << " ";
 	}
 	std::cout << std::endl;
+	delete[] arr1;
+	delete[] arr1r;
 
 	int n2 = 5;
 	double* arr2 = new double[n2] {2.2, 1.1, -8.8, -4.4, 5.5};
@@ -74,6 +78,8 @@ int main() {
 		std::cout << arr2r[i] << " ";
 	}
 	std::cout << std::endl;
+	delete[] arr2;
+	delete[] arr2r;
 
 	int n3 = 3;
 	int* arr3 = new int[n3] {1703, -1147, 1221};
@@ -84,6 +90,8 @@ int main() {
 		std::cout << arr3r[i] << " ";
 	}
 	std::cout << std::endl;
+	delete[] arr3;
+	delete[] arr3r;
 
 
 	// Task 6
@@ -96,6 +104,7 @@ int main() {
 		std::cout << array[i] << " ";
 	}
 	std::cout << std::endl;
+	delete[] array;
 
 
 	// Task 7
@@ -103,6 +112,7 @@ int main() {
 	int n7 = 14;
 	double* arr7 = new double[n7] { 1.1, 2.2, 7.7, 8.8, 6.6, 9.9, 11.1, 3.3, 12.2, 4.4, 10.1, 5.5, 14.4, 11.7};
 	std::cout <<"Amount of local minimums = "<< local_min(arr7, n7) << std::endl;
+	delete[] arr7;
 
 
 	// Task 8
@@ -117,6 +127,7 @@ int main() {
 	for (int i = 0; i < n8; i++) {
 		std::cout << "Sum of line " << i << " between zeros = " << sum_of_line(matrix[i]) << std::endl;
 	}
+	delete_matrix(matrix, n8);
 
 
 	// Task 9
@@ -131,6 +142,8 @@ int main() {
 	for (int i = 0; i < n9; ++i) {
 		std::cout << arr9r[i] << " ";
 	}
+	delete[] arr9;
+	delete[] arr9r;
 
 	return 0;
 }

@@ -78,3 +78,11 @@ T sum_of_line(T* line) {
 void selectionSort_descending(int* arr, int idx_start, int idx_end);
 
 void selectionSort_ascending(int* arr, int idx_start, int idx_end);
+
+
+template <typename T>
+void delete_matrix(T** matrix, int n) {
+	for (int i = 0; i < n; i++)
+		delete[] matrix[i];
+	delete matrix;
+}
